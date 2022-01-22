@@ -6,6 +6,7 @@ const mongoURI = "mongodb://localhost:27017/inotebook?readPreference=primary&app
 const connectToMongo = () => {
     mongoose.connect(mongoURI, () => {
         console.log("Connected to Mongo Successfully");
+        console.log("Testing");
     })
 }
 module.exports = connectToMongo;
